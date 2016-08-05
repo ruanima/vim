@@ -31,30 +31,30 @@ Plugin 'gmarik/vundle'
 " Plugins from github repos:
 
 " Python and PHP Debugger
-Plugin 'fisadev/vim-debug.vim'
+"Plugin 'fisadev/vim-debug.vim'
 " Better file browser
 Plugin 'scrooloose/nerdtree'
 " Code commenter
-Plugin 'scrooloose/nerdcommenter'
+"Plugin 'scrooloose/nerdcommenter'
 " Class/module browser
-Plugin 'majutsushi/tagbar'
+"Plugin 'majutsushi/tagbar'
 " Code and files fuzzy finder
 Plugin 'kien/ctrlp.vim'
 " Extension to ctrlp, for fuzzy command finder
-Plugin 'fisadev/vim-ctrlp-cmdpalette'
+"Plugin 'fisadev/vim-ctrlp-cmdpalette'
 " Zen coding
-Plugin 'mattn/emmet-vim'
+"Plugin 'mattn/emmet-vim'
 " Maybe the best Git integration
-Plugin 'tpope/vim-fugitive'
+"Plugin 'tpope/vim-fugitive'
 " Tab list panel
 Plugin 'kien/tabman.vim'
 " Airline
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 " Consoles as buffers
-Plugin 'rosenfeld/conque-term'
+"Plugin 'rosenfeld/conque-term'
 " Pending tasks list
-Plugin 'fisadev/FixedTaskList.vim'
+"Plugin 'fisadev/FixedTaskList.vim'
 " Surround
 Plugin 'tpope/vim-surround'
 " Autoclose
@@ -67,24 +67,24 @@ Plugin 'klen/python-mode'
 " Better autocompletion
 Plugin 'Shougo/neocomplcache.vim'
 " Snippets manager (SnipMate), dependencies, and snippets repo
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'tomtom/tlib_vim'
-Plugin 'honza/vim-snippets'
-Plugin 'garbas/vim-snipmate'
+"Plugin 'MarcWeber/vim-addon-mw-utils'
+"Plugin 'tomtom/tlib_vim'
+"Plugin 'honza/vim-snippets'
+"Plugin 'garbas/vim-snipmate'
 " awesome colorscheme
 Plugin 'tomasr/molokai'
 " Git/mercurial/others diff icons on the side of the file lines
-Plugin 'mhinz/vim-signify'
+"Plugin 'mhinz/vim-signify'
 " Automatically sort python imports
 Plugin 'fisadev/vim-isort'
 " Drag visual blocks arround
-Plugin 'fisadev/dragvisuals.vim'
+"Plugin 'fisadev/dragvisuals.vim'
 " Window chooser
-Plugin 't9md/vim-choosewin'
+"Plugin 't9md/vim-choosewin'
 " Python and other languages code checker
-Plugin 'scrooloose/syntastic'
+"Plugin 'scrooloose/syntastic'
 " Paint css colors with the real color
-Plugin 'lilydjwg/colorizer'
+"Plugin 'lilydjwg/colorizer'
 " Relative numbering of lines (0 is the current line)
 " (disabled by default because is very intrusive and can't be easily toggled
 " on/off. When the plugin is present, will always activate the relative 
@@ -97,30 +97,30 @@ Plugin 'lilydjwg/colorizer'
 " Search results counter
 Plugin 'IndexedSearch'
 " XML/HTML tags navigation
-Plugin 'matchit.zip'
+"Plugin 'matchit.zip'
 " Gvim colorscheme
 Plugin 'Wombat'
 " Yank history navigation
-Plugin 'YankRing.vim'
+"Plugin 'YankRing.vim'
 " javascript complete after install the plugin, you must cd the install
 " directory and run `npm install`, then add a .tern-project config file
 " the doc at http://ternjs.net/doc/manual.html#vim
-Plugin 'marijnh/tern_for_vim'
+"Plugin 'marijnh/tern_for_vim'
 " Golang Plugins
-Plugin 'fatih/vim-go'
+"Plugin 'fatih/vim-go'
 " JSX syntax highlight.
-Plugin 'mxw/vim-jsx'
+"Plugin 'mxw/vim-jsx'
 " Markdown syntastic highlight
-Plugin 'godlygeek/tabular'
-Plugin 'plasticboy/vim-markdown'
+"Plugin 'godlygeek/tabular'
+"Plugin 'plasticboy/vim-markdown'
 " Markdown realtime preview
 " Before you want to use it, please run
 " `sudo npm -g install instant-markdown-d`
-Plugin 'suan/vim-instant-markdown'
+"Plugin 'suan/vim-instant-markdown'
 " Handlebars syntax highlighting
-Plugin 'mustache/vim-mustache-handlebars'
+"Plugin 'mustache/vim-mustache-handlebars'
 " Vue.js syntax and highlighting
-Plugin 'tao12345666333/vim-vue'
+"Plugin 'tao12345666333/vim-vue'
 
 " ============================================================================
 " Install plugins the first time vim runs
@@ -139,6 +139,7 @@ endif
 filetype plugin on
 filetype indent on
 
+set backspace=indent,eol,start
 " tabs and spaces handling
 set expandtab
 set tabstop=4
@@ -158,11 +159,14 @@ set confirm
 set nobackup
 " other settings 
 set langmenu=zh_CN.UTF-8
-set mouse=a
+set mouse=c
 set whichwrap+=<,>,h,l,[,]
 set background=dark
 set encoding=utf-8
 
+"使tab字符可见，用>----表示
+set list
+set listchars=tab:>-
 
 " tab length exceptions on some file types
  autocmd FileType html setlocal shiftwidth=2 tabstop=2 softtabstop=2
