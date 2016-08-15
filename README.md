@@ -26,7 +26,7 @@
 
 * **Download vimrc file to user home directory**
 
-    `wget https://raw.githubusercontent.com/tao12345666333/vim/master/vimrc -O $HOME/.vimrc`
+    `wget https://raw.githubusercontent.com/ruanima/vim/master/vimrc -O $HOME/.vimrc`
 
 * **Open Vim**
 
@@ -137,7 +137,7 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_javascript_checkers = ['eslint']
 " don't put icons on the sign column (it hides the vcs status icons of signify)
 let g:syntastic_enable_signs = 0
-" custom icons (enable them if you use a patched font, and enable the previous 
+" custom icons (enable them if you use a patched font, and enable the previous
 " setting)
 let g:syntastic_error_symbol = '✗'
 let g:syntastic_warning_symbol = '⚠'

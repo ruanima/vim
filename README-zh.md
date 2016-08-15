@@ -24,7 +24,7 @@
 
 * **下载vimrc 文件到用户主目录**
 
-    `wget https://raw.githubusercontent.com/tao12345666333/vim/master/vimrc -O $HOME/.vimrc`
+    `wget https://raw.githubusercontent.com/ruanima/vim/master/vimrc -O $HOME/.vimrc`
 
 * **打开 Vim**
 
@@ -133,7 +133,7 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_javascript_checkers = ['eslint']
 " don't put icons on the sign column (it hides the vcs status icons of signify)
 let g:syntastic_enable_signs = 0
-" custom icons (enable them if you use a patched font, and enable the previous 
+" custom icons (enable them if you use a patched font, and enable the previous
 " setting)
 let g:syntastic_error_symbol = '✗'
 let g:syntastic_warning_symbol = '⚠'
@@ -223,7 +223,7 @@ let g:tagbar_autofocus = 1
 " NeoComplCache ------------------------------
 
 " most of them not documented because I'm not sure how they work
-" (docs aren't good, had to do a lot of trial and error to make 
+" (docs aren't good, had to do a lot of trial and error to make
 " it play nice)
 
 " Disable AutoComplPop.
